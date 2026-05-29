@@ -10552,7 +10552,7 @@ header.main-header .header-sticky.active{
 @media only screen and (max-width: 991px){
 
 	.hero-elite{
-		padding: 140px 0 50px;
+		padding: 140px 0 0px;
 	}
 
 	.hero-content-elite .section-title h3{
