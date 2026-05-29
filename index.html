@@ -106,110 +106,22 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
         <!-- Slide 1 -->
         <div class="swiper-slide">
-            <div class="hero-elite"
-                 style="background-image:url('img/banner-6.png');">
-
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-10">
-
-                            <div class="hero-content-elite">
-
-                                <div class="section-title">
-                                    <h3>Building Strength With Quality Concrete Solutions</h3>
-
-                                    <h1>
-                                        Reliable Manufacturing & Infrastructure Services
-                                        For Durable Construction Projects
-                                    </h1>
-
-                                    <p>
-                                        We manufacture premium RCC products and provide
-                                        reliable construction solutions designed to ensure
-                                        durability, safety and performance.
-                                    </p>
-                                </div>
-
-                                <!-- <div class="hero-btn-elite">
-                                    <a href="#" class="btn-default">
-                                        Get Free Quote
-                                    </a>
-                                </div> -->
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="hero-elite">
+                <img src="img/sathe cement.jpeg" alt="Banner Image">
             </div>
         </div>
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
-            <div class="hero-elite"
-                 style="background-image:url('img/banner-3.png');">
-
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-10">
-
-                            <div class="hero-content-elite">
-
-                                <div class="section-title">
-                                    <h3>Premium RCC Manufacturing</h3>
-
-                                    <h1>
-                                        High Quality Concrete Products
-                                        For Modern Infrastructure
-                                    </h1>
-
-                                    <p>
-                                        Durable RCC solutions manufactured with precision
-                                        and advanced technology.
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="hero-elite">
+                <img src="img/sathe cement2.jpeg" alt="Banner Image">
             </div>
         </div>
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
-            <div class="hero-elite"
-                 style="background-image:url('img/banner-4.png');">
-
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xl-10">
-
-                            <div class="hero-content-elite">
-
-                                <div class="section-title">
-                                    <h3>Trusted Construction Partner</h3>
-
-                                    <h1>
-                                        Reliable Infrastructure &
-                                        Concrete Engineering Services
-                                    </h1>
-
-                                    <p>
-                                        We deliver quality construction materials with
-                                        long-lasting performance and strength.
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
+            <div class="hero-elite">
+                <img src="img/sathe cement3.jpeg" alt="Banner Image">
             </div>
         </div>
 
@@ -246,48 +158,37 @@ new Swiper(".hero-bg-slider", {
 });
 </script>
 
-
 <style>
 
-    .section-title p {
-    color: #000;
-    }
-
-    .hero-bg-slider{
+.hero-bg-slider{
     width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 .hero-elite{
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    width: 100%;
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
+.hero-elite img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Overlay if needed */
 .hero-elite::before{
     content: '';
     position: absolute;
     inset: 0;
-    /* background: rgba(0,0,0,0.45); */
     z-index: 1;
 }
 
-.hero-elite .container{
-    position: relative;
-    z-index: 2;
-}
-
-.hero-content-elite{
-    color: #fff;
-}
-
+/* Pagination */
 .swiper-pagination-bullet{
     background: #fff;
     opacity: 0.5;
@@ -296,6 +197,48 @@ new Swiper(".hero-bg-slider", {
 .swiper-pagination-bullet-active{
     opacity: 1;
 }
+
+/* Tablet */
+@media (max-width: 991px){
+
+    .hero-elite{
+        height: 110vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+    .hero-elite{
+        height: 100vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .swiper-pagination{
+        bottom: 10px !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .hero-elite{
+        height: 70vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+    }
+}
+
 </style>
 
     <!-- About Us Section Start -->
