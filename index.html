@@ -159,6 +159,9 @@ new Swiper(".hero-bg-slider", {
 </script>
 
 <style>
+    /* =========================
+   HERO BANNER RESPONSIVE
+========================= */
 
 .hero-bg-slider{
     width: 100%;
@@ -174,13 +177,13 @@ new Swiper(".hero-bg-slider", {
 
 .hero-elite img{
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
     object-position: center;
     display: block;
 }
 
-/* Overlay if needed */
+/* Overlay */
 .hero-elite::before{
     content: '';
     position: absolute;
@@ -198,11 +201,13 @@ new Swiper(".hero-bg-slider", {
     opacity: 1;
 }
 
-/* Tablet */
-@media (max-width: 991px){
+/* =========================
+   LARGE DESKTOP
+========================= */
+@media only screen and (min-width: 1600px){
 
     .hero-elite{
-        height: 110vh;
+        height: 100vh;
     }
 
     .hero-elite img{
@@ -210,11 +215,58 @@ new Swiper(".hero-bg-slider", {
     }
 }
 
-/* Mobile */
-@media (max-width: 767px){
+/* =========================
+   DESKTOP
+========================= */
+@media only screen and (max-width: 1599px){
 
     .hero-elite{
         height: 100vh;
+    }
+}
+
+/* =========================
+   LAPTOP
+========================= */
+@media only screen and (max-width: 1366px){
+
+    .hero-elite{
+        height: 90vh;
+    }
+}
+
+/* =========================
+   SMALL LAPTOP
+========================= */
+@media only screen and (max-width: 1199px){
+
+    .hero-elite{
+        height: 80vh;
+    }
+}
+
+/* =========================
+   TABLET
+========================= */
+@media only screen and (max-width: 991px){
+
+    .hero-elite{
+        height: 70vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+/* =========================
+   LARGE MOBILE
+========================= */
+@media only screen and (max-width: 767px){
+
+    .hero-elite{
+        height: 60vh;
     }
 
     .hero-elite img{
@@ -223,15 +275,17 @@ new Swiper(".hero-bg-slider", {
     }
 
     .swiper-pagination{
-        bottom: 10px !important;
+        bottom: 12px !important;
     }
 }
 
-/* Small Mobile */
-@media (max-width: 480px){
+/* =========================
+   MOBILE
+========================= */
+@media only screen and (max-width: 575px){
 
     .hero-elite{
-        height: 70vh;
+        height: 50vh;
     }
 
     .hero-elite img{
@@ -239,6 +293,39 @@ new Swiper(".hero-bg-slider", {
     }
 }
 
+/* =========================
+   SMALL MOBILE
+========================= */
+@media only screen and (max-width: 480px){
+
+    .hero-elite{
+        height: 45vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .swiper-pagination{
+        bottom: 8px !important;
+    }
+}
+
+/* =========================
+   EXTRA SMALL MOBILE
+========================= */
+@media only screen and (max-width: 360px){
+
+    .hero-elite{
+        height: 40vh;
+    }
+
+    .hero-elite img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
 </style>
 
     <!-- About Us Section Start -->
