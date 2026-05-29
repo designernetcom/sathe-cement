@@ -159,36 +159,81 @@ new Swiper(".hero-bg-slider", {
 </script>
 
 <style>
-    /* =========================
-   HERO BANNER RESPONSIVE
-========================= */
-
-.hero-bg-slider{
+    .hero-bg-slider{
     width: 100%;
     position: relative;
 }
 
 .hero-elite{
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
+/* Banner Image */
 .hero-elite img{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     display: block;
+    object-fit: contain;
 }
 
-/* Overlay */
-.hero-elite::before{
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: 1;
+/* Desktop */
+@media (min-width: 1200px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Laptop */
+@media (max-width: 1199px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-pagination{
+        bottom: 10px !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px){
+
+    .hero-elite img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Pagination */
@@ -199,132 +244,6 @@ new Swiper(".hero-bg-slider", {
 
 .swiper-pagination-bullet-active{
     opacity: 1;
-}
-
-/* =========================
-   LARGE DESKTOP
-========================= */
-@media only screen and (min-width: 1600px){
-
-    .hero-elite{
-        height: 100vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-    }
-}
-
-/* =========================
-   DESKTOP
-========================= */
-@media only screen and (max-width: 1599px){
-
-    .hero-elite{
-        height: 100vh;
-    }
-}
-
-/* =========================
-   LAPTOP
-========================= */
-@media only screen and (max-width: 1366px){
-
-    .hero-elite{
-        height: 90vh;
-    }
-}
-
-/* =========================
-   SMALL LAPTOP
-========================= */
-@media only screen and (max-width: 1199px){
-
-    .hero-elite{
-        height: 80vh;
-    }
-}
-
-/* =========================
-   TABLET
-========================= */
-@media only screen and (max-width: 991px){
-
-    .hero-elite{
-        height: 70vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-        object-position: center;
-    }
-}
-
-/* =========================
-   LARGE MOBILE
-========================= */
-@media only screen and (max-width: 767px){
-
-    .hero-elite{
-        height: 60vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .swiper-pagination{
-        bottom: 12px !important;
-    }
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media only screen and (max-width: 575px){
-
-    .hero-elite{
-        height: 50vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-    }
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-@media only screen and (max-width: 480px){
-
-    .hero-elite{
-        height: 45vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-        object-position: center;
-    }
-
-    .swiper-pagination{
-        bottom: 8px !important;
-    }
-}
-
-/* =========================
-   EXTRA SMALL MOBILE
-========================= */
-@media only screen and (max-width: 360px){
-
-    .hero-elite{
-        height: 40vh;
-    }
-
-    .hero-elite img{
-        object-fit: cover;
-        object-position: center;
-    }
 }
 </style>
 
