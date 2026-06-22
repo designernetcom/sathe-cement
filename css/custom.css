@@ -2055,7 +2055,7 @@ header.main-header .header-sticky.active{
 	border: 1px solid #000;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-right: 10px;
 	border-radius: 20px;
 	background: var(--white-color);
@@ -5113,7 +5113,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.project-company-slider-content h3{
-		font-size: 18px;
+		font-size: 28px;
 	}
 
 	.project-company-slider{
