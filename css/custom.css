@@ -404,7 +404,7 @@ a:focus{
 	/* background: url('../images/icon-sub-heading.svg') no-repeat; */
 	background-position: left center;
 	background-size: 18px auto;
-	padding-left: 26px;
+	padding-left: 5px;
     margin-bottom: 15px;
 }
 
@@ -580,6 +580,8 @@ header.main-header .header-sticky.active{
 	padding: 15px 0px;
 	align-items: center;
 	background: #ffffffd4;
+	border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
 }
 
 .navbar-brand{
@@ -1319,7 +1321,7 @@ header.main-header .header-sticky.active{
     background: #f1f1f1ad;
 	background-position: bottom right;
 	background-size: auto;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .service-item{
@@ -8795,7 +8797,7 @@ header.main-header .header-sticky.active{
 }
 
 .about-us-elite{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .about-us-images-elite{
@@ -8903,7 +8905,7 @@ header.main-header .header-sticky.active{
 .achievement-item-elite{
 	background-color: var(--secondary-color);
 	border-radius: 20px;
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 .achievement-item-header-elite{
@@ -9173,7 +9175,7 @@ header.main-header .header-sticky.active{
 }
 
 .why-choose-us-elite{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .why-choose-us-elite .section-title.section-title-center{
@@ -11176,6 +11178,8 @@ a:hover {
     background-position: center;
     padding: 80px 0 25px;
     color: #fff;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
 }
 
 .footer-widget{
@@ -11329,3 +11333,11 @@ a:hover {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+
+
+.achievement-item-elite img {
+	border-radius: 20px;
+}
+
+
