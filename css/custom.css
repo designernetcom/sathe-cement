@@ -11333,7 +11333,16 @@ a:hover {
     .review-box{
         padding: 25px;
     }
+
+	.navbar-brand {
+    width: 120px;
 }
+
+    .hero-elite {
+        padding: 130px 0 0px;
+    }
+}
+
 
 .footer-modern .container{
 	max-width: 1400px;
