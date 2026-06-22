@@ -5353,6 +5353,10 @@ header.main-header .header-sticky.active{
 
 @media only screen and (max-width: 991px){
 
+	.proj {
+    padding-bottom: 30px !important;
+}
+
 	.btn-default{
         padding: 15px 40px 15px 18px;
     }
@@ -5371,7 +5375,7 @@ header.main-header .header-sticky.active{
 
 	.section-title h3{
 		background-size: 16px auto;
-		padding-left: 24px;
+		padding-left: 2px;
 		margin-bottom: 10px;
 	}
 
@@ -5497,7 +5501,7 @@ header.main-header .header-sticky.active{
 
 	.our-services{
 		background-size: 300px auto;
-		padding: 50px 0;
+		padding: 20px 0;
 	}
 
 	.service-item{
@@ -10580,7 +10584,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.about-us-elite{
-		padding: 50px 0;
+		padding: 20px 0;
 	}
 
 	.get-in-touch-circle-elite a img{
@@ -10602,6 +10606,7 @@ header.main-header .header-sticky.active{
 
 	.about-us-btn-elite{
 		margin-top: 30px;
+		margin-bottom: 20px;
 	}
 
 	.our-services-elite{
@@ -10610,7 +10615,7 @@ header.main-header .header-sticky.active{
 	}
 
 	.why-choose-us-elite{
-		padding: 50px 0;
+		padding: 30px 0;
 	}
 
 	.why-choose-us-elite .section-footer-text{
