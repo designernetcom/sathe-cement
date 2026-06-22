@@ -68,7 +68,7 @@
 	/* Project Slider JS */
 	if ($('.project-company-slider').length) {
 		const project_company_slider = new Swiper('.project-company-slider .swiper', {
-			slidesPerView : 2,
+			slidesPerView : 1,
 			speed: 2000,
 			spaceBetween: 30,
 			loop: true,

@@ -11326,6 +11326,8 @@ a:hover {
     .footer-bottom{
         flex-direction: column;
         text-align: center;
+		margin-top: 0px;
+
     }
 
     .review-box{
